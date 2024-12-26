@@ -1,0 +1,27 @@
+.sbar {
+  height: 100%; /* Fill the container's height */
+  width: 100%; /* Fill the container's width */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: end; /* Align content to the right */
+}
+
+.sbar-content {
+  margin-right: 5rem;
+  margin-top: 2.7rem;
+}
+
+.plusBar {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  margin-right: 2rem;
+}
+
+.plusBar:hover {
+  cursor: pointer;
+  color: green;
+  transition: 0.2s;
+}

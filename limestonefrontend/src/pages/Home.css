@@ -11,8 +11,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the video covers the entire container */
-  pointer-events: none; /* Prevents user interaction with the video */
+  object-fit: cover; 
+  pointer-events: none; 
 }
 
 .content {
@@ -35,10 +35,27 @@
   border: none;
   color: white;
   font-size: 3rem;
-  margin-right: 2rem;
+  margin-right: 7rem;
 }
+
 .plus:hover {
   cursor: pointer;
   color: green;
   transition: 0.2s;
+}
+
+.floatRight {
+  position: fixed; /* Use fixed for consistent positioning */
+  top: 0;
+  right: 0;
+  height: 100vh; /* Match viewport height */
+  width: 50%;
+  background-color: black; /* Background color on the container */
+  transform: translateX(100%); /* Start off-screen */
+  transition: transform 0.5s ease-in-out;
+  z-index: 1000; /* Ensure it's on top */
+}
+
+.floatRight.active {
+  transform: translateX(0); /* Slide into view */
 }
