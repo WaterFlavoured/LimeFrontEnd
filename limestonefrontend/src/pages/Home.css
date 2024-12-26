@@ -59,3 +59,14 @@
 .floatRight.active {
   transform: translateX(0); /* Slide into view */
 }
+
+.content h2 {
+  position: absolute;
+  margin-left: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.content h1 {
+  margin-left: 5rem;
+}
