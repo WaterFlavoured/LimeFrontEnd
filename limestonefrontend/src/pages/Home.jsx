@@ -31,8 +31,8 @@ const Home = ({ setShowNav, showNav }) => {
     <div className="main">
       <video className="background-video" src={video1} autoPlay loop muted />
       <div className='content'>
-        <h1><Link to="/"><img src={logo} alt="" ref={logoRef}/></Link></h1>
-        <h2 ref={textRef}>LimeStone <br /> Concrete</h2>
+        <h1><Link to="/" onClick={() => setShowNav(false)}><img src={logo} alt="" ref={logoRef}/></Link></h1>
+        <h2 ref={textRef}><Link to="/" onClick={() => setShowNav(false)} className='titleLogo'>LimeStone <br /> Concrete</Link></h2>
         <button className='plus' onClick={() => setShowNav(!showNav)}>
           <FontAwesomeIcon icon={faBars} />
         </button>

@@ -1,9 +1,55 @@
-.navbar {
-    background-color: #333;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    transition: top 0.3s;
+#logoImage {
+  width: 5rem;
+  margin-left: 5rem;
+}
+
+.nplus {
+  background-color: transparent;
+  border: none;
+  color: #FFAB00;
+  font-size: 3rem;
+  margin-right: 7rem;
+}
+
+.nplus:hover {
+  cursor: pointer;
+  color: #B0BEC5;
+  transition: 0.2s;
+}
+
+.navbar-logo {
+  position: relative;
+}
+
+.navbar-logo img {
+  position: relative;
+  margin-left: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  top: 5px;
+}
+
+.navbar-logo img:hover {
+  transform-origin: left top;
+  animation: scale 2000ms ease-in-out forwards;
+}
+
+@keyframes scale {
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.navbar-logo h2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 3rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.navbar-logo a {
+  text-decoration: none;
+  color: black;
 }
