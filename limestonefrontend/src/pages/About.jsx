@@ -5,8 +5,9 @@ import logo from '../assets/HD LIMESTONE LOGO.png'
 
 const About = () => {
   return (
-    <div>
-      <h1>ABOUT</h1>
+    // general className for this page is 'about'
+    <div className='about'> 
+      <h1 className='about-h1'>ABOUT</h1>
 
       <div> Limestone Concrete <br /> "A little hint of Limestone" </div>
 

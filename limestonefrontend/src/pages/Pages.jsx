@@ -5,10 +5,10 @@ import Navbar from '../components/Navbar'
 import Portfolio from './Portfolio';
 import Rentals from './Rentals';
 import Contact from './Contact';
-const Pages = () => {
+const Pages = ({showNav, setShowNav}) => {
   return (
     <div>
-      <Navbar />
+      <Navbar showNav={showNav} setShowNav={setShowNav}/>
       <Routes>
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />

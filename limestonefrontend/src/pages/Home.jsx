@@ -7,8 +7,8 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import SideBar from '../components/SideBar.jsx';
 import './Home.css';
 
-const Home = () => {
-  const [showNav, setShowNav] = useState(false);
+const Home = ({ setShowNav, showNav }) => {
+  
   const logoRef = useRef(null);
   const textRef = useRef(null);
 
