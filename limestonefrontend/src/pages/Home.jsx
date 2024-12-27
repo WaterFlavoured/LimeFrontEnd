@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router';
 import video1 from '../assets/italy.mp4';
-import logo from '../assets/image.png';
+import logo from '../assets/HD LIMESTONE LOGO.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import SideBar from '../components/SideBar.jsx';
