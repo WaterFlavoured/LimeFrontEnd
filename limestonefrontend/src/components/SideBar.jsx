@@ -2,7 +2,7 @@ import React from 'react';
 import './SideBar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-
+import { Link } from 'react-router';
 const SideBar = ({ setShowNav }) => {
   return (
     <div className='sbar'>
@@ -11,8 +11,8 @@ const SideBar = ({ setShowNav }) => {
           <FontAwesomeIcon icon={faBars} />
         </button>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/pages/about">About</Link></li>
         </ul>
       </div>
     </div>

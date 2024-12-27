@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router';
 import video1 from '../assets/italy.mp4';
 import logo from '../assets/image.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -30,7 +31,7 @@ const Home = () => {
     <div className="main">
       <video className="background-video" src={video1} autoPlay loop muted />
       <div className='content'>
-        <h1><img src={logo} alt="" ref={logoRef}/></h1>
+        <h1><Link to="/"><img src={logo} alt="" ref={logoRef}/></Link></h1>
         <h2 ref={textRef}>LimeStone <br /> Concrete</h2>
         <button className='plus' onClick={() => setShowNav(!showNav)}>
           <FontAwesomeIcon icon={faBars} />
