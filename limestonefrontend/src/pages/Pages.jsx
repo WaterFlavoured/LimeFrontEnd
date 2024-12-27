@@ -5,16 +5,19 @@ import Navbar from '../components/Navbar'
 import Portfolio from './Portfolio';
 import Rentals from './Rentals';
 import Contact from './Contact';
+import './Pages.css'
 const Pages = ({showNav, setShowNav}) => {
   return (
     <div>
       <Navbar showNav={showNav} setShowNav={setShowNav}/>
-      <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/rentals" element={<Rentals />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <div className='pages'>
+        <Routes >
+          <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/rentals" element={<Rentals />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
     </div>
   )
 }

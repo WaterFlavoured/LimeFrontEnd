@@ -15,7 +15,7 @@ const About = () => {
 
       <div><img className="logo" src={logo} alt=""></img></div>
 
-      <div>
+      <div className='about-text'>
 
         <h1>ABOUT LIMESTONE CONCRETE</h1>
 
