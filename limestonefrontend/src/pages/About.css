@@ -18,8 +18,6 @@
   align-items: center;
 }
 
-/* Specific Element Styles */
-
 /* Center the "ABOUT" title */
 .about h1:first-child {
   text-align: center;
@@ -38,7 +36,7 @@
 }
 
 /* Center and resize the logo */
-.about > .logo {
+.about .logo {
   width: 100px;
   height: 100px;
 }
@@ -51,4 +49,8 @@
 /* Center text underneath "OUR STANDARDS" */
 .about div p {
   text-align: center;
+}
+
+.about > .ourVis {
+  text-align: right;
 }

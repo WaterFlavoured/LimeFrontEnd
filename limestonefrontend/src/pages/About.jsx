@@ -43,7 +43,7 @@ const About = () => {
 
         {/* we put an image here and then all the text will be on the right */}
 
-        <h1>OUR VISION</h1>
+        <h1 classname="ourVis">OUR VISION</h1>
 
         <body>At Limestone Concrete, our vision is to build more than just foundations—we <br />
           aim to lay the groundwork for trust, innovation, and enduring partnerships. We <br />
