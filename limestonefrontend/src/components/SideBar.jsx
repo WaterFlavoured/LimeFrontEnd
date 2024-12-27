@@ -13,6 +13,9 @@ const SideBar = ({ setShowNav }) => {
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/pages/about">About</Link></li>
+          <li><Link to="/pages/portfolio">Portfolio</Link></li>
+          <li><Link to="/pages/rentals">Rentals</Link></li>
+          <li><Link to="/pages/contact">Contact</Link></li>
         </ul>
       </div>
     </div>
