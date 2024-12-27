@@ -11,6 +11,5 @@ const Home = () => {
     </div>
   );
 };
-//who up crankin they hog????
 
 export default Home;
