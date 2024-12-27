@@ -40,7 +40,7 @@
 
 .plus:hover {
   cursor: pointer;
-  color: green;
+  color: #FFAB00;
   transition: 0.2s;
 }
 
@@ -69,4 +69,5 @@
 
 .content h1 {
   margin-left: 5rem;
+  font-family: 'Tw Cen MT Std', sans-serif;
 }

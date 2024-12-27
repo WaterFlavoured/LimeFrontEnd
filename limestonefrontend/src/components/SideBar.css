@@ -5,11 +5,18 @@
   display: flex;
   flex-direction: column;
   align-items: end; /* Align content to the right */
+  
 }
 
 .sbar-content {
-  margin-right: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  /* margin-right: 2rem; */
   margin-top: 2.7rem;
+  width: 100%;
+  height: 100%;
+  padding-right: 7rem;
 }
 
 .plusBar {
@@ -17,11 +24,63 @@
   border: none;
   color: white;
   font-size: 3rem;
-  margin-right: 2rem;
 }
 
 .plusBar:hover {
   cursor: pointer;
-  color: green;
+  color: #FFAB00;
+  transition: 0.2s;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+li {
+  margin-top: 4rem;
+  font-size: 3rem;
+  text-align: right;
+  width: 100%;
+  
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #FFAB00;
+}
+
+.sfooter {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  right: 0;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  padding-right: 7rem;
+}
+
+.social {
+  color: white;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.social a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.social a:hover {
+  color: #FFAB00;
   transition: 0.2s;
 }
