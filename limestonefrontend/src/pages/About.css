@@ -23,10 +23,6 @@
   text-align: center;
 }
 
-.about > .firstP {
-  text-align: center;
-}
-
 /* Center the stock photo image */
 .about img[src*="stock"] {
   display: block;
@@ -52,5 +48,36 @@
 }
 
 .about > .ourVis {
+  text-align: left;
+}
+
+.about > .vision {
   text-align: right;
+}
+
+.tempBlock {
+  display:flex;
+  flex-direction: row;
+  flex: 1;
+  padding: 10px;
+  border: 5px solid #ffcc5c;
+  justify-content: space-evenly;
+}
+
+.tempBlock > .oVphoto {
+  display: flex;
+  flex-grow: 0;
+  justify-content: left;
+  height: 200px;
+}
+
+.tempBlock > .ourVisMeow {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.ourDut {
+  display: flex;
+  flex-direction: column;
 }
