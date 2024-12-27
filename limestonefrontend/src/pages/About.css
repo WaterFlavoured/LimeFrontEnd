@@ -1,0 +1,57 @@
+/* General Styles */
+body {
+    background-color: #F5F5F5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  div {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  /* Specific Element Styles */
+  
+  /* Center the "ABOUT" title */
+  div h1:first-child {
+    text-align: center;
+  }
+
+  .firstP {
+    text-align: center;
+  }
+  
+  /* Center the stock photo image */
+  img[src*="stock"] {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Center and resize the logo */
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  /* Center descriptions */
+  body {
+    text-align: justify;
+  }
+  
+  /* Center "OUR STANDARDS" */
+  div h1:nth-of-type(2) {
+    text-align: center;
+  }
+  
+  /* Center text underneath "OUR STANDARDS" */
+  div p {
+    text-align: center;
+  }
+  
