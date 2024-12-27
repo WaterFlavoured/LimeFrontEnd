@@ -71,3 +71,8 @@
   margin-left: 5rem;
   font-family: 'Tw Cen MT Std', sans-serif;
 }
+
+.titleLogo {
+  text-decoration: none;
+  color: white;
+}

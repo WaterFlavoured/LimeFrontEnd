@@ -13,10 +13,10 @@ const SideBar = ({ setShowNav }) => {
           <FontAwesomeIcon icon={faBars} />
         </button>
         <ul>
-          <li><Link to="/pages/about">About</Link></li>
-          <li><Link to="/pages/portfolio">Portfolio</Link></li>
-          <li><Link to="/pages/rentals">Rentals</Link></li>
-          <li><Link to="/pages/contact">Contact Us</Link></li>
+          <li><Link to="/pages/about" onClick={() => setShowNav(false)}>About</Link></li>
+          <li><Link to="/pages/portfolio" onClick={() => setShowNav(false)}>Portfolio</Link></li>
+          <li><Link to="/pages/rentals" onClick={() => setShowNav(false)}>Rentals</Link></li>
+          <li><Link to="/pages/contact" onClick={() => setShowNav(false)}>Contact Us</Link></li>
         </ul>
         <div className='sfooter'>
           <div className='social'>
