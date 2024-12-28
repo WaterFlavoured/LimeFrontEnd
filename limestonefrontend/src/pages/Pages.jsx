@@ -1,10 +1,14 @@
 import React from 'react'
 import { Routes, Route } from "react-router";
-import About from './About'
+
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer';
+
+import About from './About'
 import Portfolio from './Portfolio';
 import Rentals from './Rentals';
 import Contact from './Contact';
+
 import './Pages.css'
 const Pages = ({showNav, setShowNav}) => {
   return (
@@ -18,6 +22,7 @@ const Pages = ({showNav, setShowNav}) => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
+      <Footer />
     </div>
   )
 }
