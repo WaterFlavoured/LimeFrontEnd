@@ -1,6 +1,6 @@
 /* General Styles */
 .about {
-  background-color: #F5F5F5;
+  background-color: #37474F;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -15,20 +15,24 @@
 }
 
 .about-h1{
+  padding-top: 50px;
   align-items: center;
+}
+
+.about .header {
+  color: #F5F5F5;
+}
+
+.about .image1 {
+  display: flex;
+  flex: 1;
+  height: auto;
+  margin: 0 auto;
 }
 
 /* Center the "ABOUT" title */
 .about h1:first-child {
   text-align: center;
-}
-
-/* Center the stock photo image */
-.about img[src*="stock"] {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
 }
 
 /* Center and resize the logo */
@@ -55,26 +59,56 @@
   text-align: right;
 }
 
-.tempBlock {
+.tempBlock1 {
   display:flex;
   flex-direction: row;
   flex: 1;
   padding: 10px;
-  border: 5px solid #ffcc5c;
+  background-color: #FFAB00;
   justify-content: space-evenly;
 }
 
-.tempBlock > .oVphoto {
-  display: flex;
-  flex-grow: 0;
-  justify-content: left;
-  height: 200px;
+.tempBlock2 {
+  display:flex;
+  flex-direction: row;
+  flex: 1;
+  padding: 10px;
+  background-color: #F5F5F5;
+  justify-content: space-evenly;
 }
 
-.tempBlock > .ourVisMeow {
+.tempBlock3 {
+  display:flex;
+  flex-direction: row;
+  flex: 1;
+  padding: 10px;
+  background-color: #B0BEC5;
+  justify-content: space-evenly;
+}
+
+.tempBlock1 > .ourStandards {
+  display: flex;
+  flex-direction: column;
+}
+
+.tempBlock2 > .oVphoto {
+  display: flex;
+  flex: 1;
+  justify-content: left;
+  max-width: 30%;
+}
+
+.tempBlock3 > .ourVisMeow {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
+}
+
+.tempBlock3 > .oVphoto {
+  display: flex;
+  flex-grow: 0;
+  justify-content: left;
+  max-width: 30%;
 }
 
 .ourDut {
