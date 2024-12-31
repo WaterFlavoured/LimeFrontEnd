@@ -51,15 +51,15 @@ const About = () => {
         {/* we put an image here and then all the text will be on the right */}
         <img className='oVphoto' src={image2} alt=""></img>
 
-        <div className='ourVisMeow'>
+        <div className='ourVis'>
 
           <h1>OUR VISION</h1>
 
-          <p>Our vision is to build more than just foundations—we <br />
-            aim to lay the groundwork for trust, innovation, and enduring partnerships. We <br />
-            strive to set the standard for excellence in our industry by combining modern <br />
-            techniques with timeless craftsmanship. Driven by a passion for quality and a <br />
-            commitment to our community, we envision a future where every project we complete <br />
+          <p className='ourVisText'> Our vision is to build more than just foundations—we  
+            aim to lay the groundwork for trust, innovation, and enduring partnerships. We 
+            strive to set the standard for excellence in our industry by combining modern 
+            techniques with timeless craftsmanship. Driven by a passion for quality and a 
+            commitment to our community, we envision a future where every project we complete 
             becomes a testament to our dedication and values.</p>
         </div>
 
@@ -71,7 +71,7 @@ const About = () => {
 
           <h1>OUR DUTIES</h1>
 
-          <p> At Limestone Concrete, our duties go beyond delivering exceptional foundations. <br />
+          <p className='ourDutiesText'> At Limestone Concrete, our duties go beyond delivering exceptional foundations. <br />
             We are committed to maintaining the highest standards of safety, precision, and <br />
             professionalism on every job site. Our team takes pride in clear communication, <br />
             environmental responsibility, and ensuring each project is completed on time and <br />
