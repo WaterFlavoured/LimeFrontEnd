@@ -1,0 +1,22 @@
+.contact {
+    background-color: #37474F;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    color: #F5F5F5;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.header {
+    display: flex;
+    align-items: center;
+    padding-top: 250px;
+    padding-bottom: 250px;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+  }

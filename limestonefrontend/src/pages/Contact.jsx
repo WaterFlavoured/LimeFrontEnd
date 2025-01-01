@@ -2,7 +2,25 @@ import React from 'react'
 import './Contact.css'
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div className='contact'>
+
+      <div className='title'>
+
+        <h1 className='header'>Get in Touch</h1>
+        
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
   )
 }
 
