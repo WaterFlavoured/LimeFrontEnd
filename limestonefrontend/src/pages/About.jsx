@@ -44,11 +44,14 @@ const About = () => {
 
       </div>
 
-      {/* <div> 4 images go here and then we put text (quality, professionalism, efficiency, integrity)</div> */}
+      <div className='fillerPhotos'>
+
+        
+
+      </div>
 
       <div className='tempBlock2'>
 
-        {/* we put an image here and then all the text will be on the right */}
         <img className='oVphoto' src={image2} alt=""></img>
 
         <div className='ourVis'>
@@ -81,7 +84,6 @@ const About = () => {
 
         </div>
 
-        {/* we put an image here but all the text will be to the left of it */}
         <img className='oVphoto' src={image3} alt=""></img>
 
       </div>

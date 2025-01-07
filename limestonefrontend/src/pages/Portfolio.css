@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    color: #37474F;
+    text-align: center;
+  }
+  
+  header {
+    padding: 20px;
+    background-color: #FFAB00;
+    color: white;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  header p {
+    margin: 5px 0;
+    font-size: 1.2em;
+  }
+  
+  /* Portfolio Grid */
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  
+  .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-item:hover img {
+    transform: scale(1.1);
+  }
+
+/*================================================================================================== */
+
+ /* Modal Styles */
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    border: 3px solid #fff;
+    animation: zoomIn 0.3s ease;
+  }
+  
+  .caption {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.2rem;
+  }
+  
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Add zoom animation */
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
