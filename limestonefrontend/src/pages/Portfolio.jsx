@@ -10,6 +10,10 @@ import image7 from '../assets/PortfolioPhotos/P7.jpg';
 import image8 from '../assets/PortfolioPhotos/P8.jpg';
 import image9 from '../assets/PortfolioPhotos/P9.jpg';
 import image10 from '../assets/PortfolioPhotos/P10.jpg';
+import image11 from '../assets/PortfolioPhotos/P11.jpg';
+import image12 from '../assets/PortfolioPhotos/P12.jpg';
+import image13 from '../assets/PortfolioPhotos/P13.jpg';
+import image14 from '../assets/PortfolioPhotos/P14.jpg';
 
 const Portfolio = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -39,6 +43,11 @@ const Portfolio = () => {
     { src: image8, alt: '' },
     { src: image9, alt: '' },
     { src: image10, alt: '' },
+    { src: image11, alt: '' },
+    { src: image12, alt: '' },
+    { src: image13, alt: '' },
+    { src: image14, alt: '' },
+
   ];
 
   return (
