@@ -47,7 +47,14 @@ const Portfolio = () => {
     { src: image12, alt: '' },
     { src: image13, alt: '' },
     { src: image14, alt: '' },
+  ];
 
+  // Group images based on row configuration
+  const rows = [
+    images.slice(0, 2),   // First row: 2 images
+    images.slice(2, 6),   // Second row: 4 images
+    images.slice(6, 9),   // Third row: 3 images
+    images.slice(9, 14),  // Fourth row: 5 images
   ];
 
   return (
@@ -58,14 +65,18 @@ const Portfolio = () => {
       </header>
 
       <section className='portfolio-grid'>
-        {images.map((image, index) => (
-          <div className='portfolio-item' key={index}>
-            <img
-              src={image.src}
-              alt={image.alt}
-              onClick={() => openModal(image.src, image.alt)}
-            />
-            <div className='portfolio-overlay'></div>
+        {rows.map((row, rowIndex) => (
+          <div className='portfolio-row' key={rowIndex}>
+            {row.map((image, index) => (
+              <div className='portfolio-item' key={index}>
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  onClick={() => openModal(image.src, image.alt)}
+                />
+                <div className='portfolio-overlay'></div>
+              </div>
+            ))}
           </div>
         ))}
       </section>
