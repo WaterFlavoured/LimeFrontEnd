@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #F5F5F5;
+  background-color: #263238;
   color: #37474F;
   text-align: center;
 }
@@ -30,7 +30,7 @@ header p {
   font-family: Arial, sans-serif;
 }
 
-header {
+.header {
   text-align: center;
   margin-bottom: 20px;
 }
@@ -39,7 +39,7 @@ header {
 .portfolio-layout {
   display: flex;
   flex-direction: column;
-  gap: 50px; /* Add space between rows */
+  gap: 40px; /* Add space between rows */
   width: 100%; /* Ensure rows span the full width */
   padding: 0; /* Remove any extra padding */
   margin: 0; /* Remove extra margins */
@@ -47,43 +47,46 @@ header {
 
 .portfolio-row {
   display: flex;
+  flex: 1;
   justify-content: center; /* Center the images in the row */
-  gap: 15px; /* Add spacing between images */
+  gap: 25px; /* Add spacing between images */
+  margin-bottom: 15%;
   width: 100%; /* Ensure the row spans the full width */
+  border-radius: 15px;
+}
+
+.portfolio-item {
+  display: flex;
+  flex: 1;
+  gap: 15px;
+  width: 100px;
+  height: 40vh;
+  border-radius: 15px;
 }
 
 /* Styling each image within the row */
 .portfolio-row img {
   flex-grow: 1; /* Ensure images stretch proportionally within the row */
-  max-width: 100%; /* Prevent images from overflowing */
-  height: auto; /* Maintain aspect ratio */
+  flex: 1;
+  width: 100%; /* Prevent images from overflowing */
+  height: 500px; /* Maintain aspect ratio */
   object-fit: cover; /* Ensure images fit their space */
-  border-radius: 5px; /* Optional: Round corners */
-}
-
-/* Optional: Full-width row without gaps */
-.portfolio-row.full-width {
-  gap: 0; /* Remove spacing between images */
+  object-fit: hover;
+  border-radius: 15px; /* Optional: Round corners */
 }
 
 /* Portfolio Grid - remove as we're using rows now */
 .portfolio-grid {
   padding: 20px;
   margin: 0 auto;
+  border-radius: 15px;
 }
 
 /* Portfolio item styling */
 .portfolio-item {
   position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.portfolio-item img {
-  width: 300px; /* Set a uniform width */
-  height: 200px; /* Set a uniform height */
-  object-fit: hover; /* Crop the image proportionally */
-  border-radius: 5px; /* Optional rounded corners */
+  
+  border-radius: 15px;
 }
 
 .portfolio-item:hover img {
@@ -103,6 +106,7 @@ header {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 1000;
+  border-radius: 15px;
 }
 
 .modal-content {

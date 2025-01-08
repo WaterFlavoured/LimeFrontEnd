@@ -54,7 +54,8 @@ const Portfolio = () => {
     images.slice(0, 2),   // First row: 2 images
     images.slice(2, 6),   // Second row: 4 images
     images.slice(6, 9),   // Third row: 3 images
-    images.slice(9, 14),  // Fourth row: 5 images
+    images.slice(9, 11),  // Fourth row: 2 images
+    images.slice(11, 14)  // Fifth row: 3 images
   ];
 
   return (
