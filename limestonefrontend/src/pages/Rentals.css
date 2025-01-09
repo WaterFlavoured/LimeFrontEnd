@@ -1,0 +1,26 @@
+.rentals {
+    display: flex;
+    flex-direction: column;
+    color: beige;
+    margin: 10px;
+}
+
+.rentals > .header {
+    display: flex;
+    color: beige;
+    justify-content: center;   
+}
+
+.rentals > .main-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.imgs {
+    display: flex;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+
