@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Portfolio.css';
 import image1 from '../assets/PortfolioPhotos/P1.jpg';
 import image2 from '../assets/PortfolioPhotos/P2.jpg';
@@ -19,6 +19,7 @@ const Portfolio = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState('');
   const [caption, setCaption] = useState('');
+  const sectionsRef = useRef([]);
 
   const openModal = (src, alt) => {
     setCurrentImage(src);
@@ -49,14 +50,38 @@ const Portfolio = () => {
     { src: image14, alt: '' },
   ];
 
-  // Group images based on row configuration
   const rows = [
-    images.slice(0, 2),   // First row: 2 images
-    images.slice(2, 6),   // Second row: 4 images
-    images.slice(6, 9),   // Third row: 3 images
-    images.slice(9, 11),  // Fourth row: 2 images
-    images.slice(11, 14)  // Fifth row: 3 images
+    images.slice(0, 2),   
+    images.slice(2, 6),   
+    images.slice(6, 9),
+    images.slice(9, 11),
+    images.slice(11, 14)  
   ];
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          } else {
+            entry.target.classList.remove('visible');
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    sectionsRef.current.forEach((el) => {
+      if (el) observer.observe(el);
+    });
+
+    return () => {
+      sectionsRef.current.forEach((el) => {
+        if (el) observer.unobserve(el);
+      });
+    };
+  }, []);
 
   return (
     <div className='portfolio'>
@@ -69,7 +94,11 @@ const Portfolio = () => {
         {rows.map((row, rowIndex) => (
           <div className='portfolio-row' key={rowIndex}>
             {row.map((image, index) => (
-              <div className='portfolio-item' key={index}>
+              <div
+                className='portfolio-item fade-in'
+                key={index}
+                ref={(el) => sectionsRef.current.push(el)}
+              >
                 <img
                   src={image.src}
                   alt={image.alt}

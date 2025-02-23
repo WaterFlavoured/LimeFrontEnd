@@ -144,3 +144,22 @@
   gap: 50px;
   padding-bottom: 75px;
 }
+
+.fade-in, .slide-in-left, .slide-in-right {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease-out, transform 0.65s ease-out;
+}
+
+.slide-in-left {
+  transform: translateX(-50px);
+}
+
+.slide-in-right {
+  transform: translateX(50px);
+}
+
+.visible {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}

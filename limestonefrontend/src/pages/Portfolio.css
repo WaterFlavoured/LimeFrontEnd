@@ -24,68 +24,91 @@ header p {
   font-size: 1.2em;
 }
 
-/* Portfolio.css */
+/* Portfolio layout */
 .portfolio {
   padding: 20px;
   font-family: Arial, sans-serif;
 }
 
-.header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* Portfolio layout */
-.portfolio-layout {
-  display: flex;
-  flex-direction: column;
-  gap: 40px; /* Add space between rows */
-  width: 100%; /* Ensure rows span the full width */
-  padding: 0; /* Remove any extra padding */
-  margin: 0; /* Remove extra margins */
-}
-
 .portfolio-row {
   display: flex;
   flex: 1;
-  justify-content: center; /* Center the images in the row */
-  gap: 25px; /* Add spacing between images */
-  margin-bottom: 15%;
-  width: 100%; /* Ensure the row spans the full width */
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 12.5%;
+  margin-top: 2.5%;
+  width: 100%;
   border-radius: 15px;
 }
 
-.portfolio-item {
-  display: flex;
-  flex: 1;
-  gap: 15px;
-  width: 100px;
-  height: 40vh;
-  border-radius: 15px;
-}
-
-/* Styling each image within the row */
-.portfolio-row img {
-  flex-grow: 1; /* Ensure images stretch proportionally within the row */
-  flex: 1;
-  width: 100%; /* Prevent images from overflowing */
-  height: 500px; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensure images fit their space */
-  object-fit: hover;
-  border-radius: 15px; /* Optional: Round corners */
-}
-
-/* Portfolio Grid - remove as we're using rows now */
-.portfolio-grid {
-  padding: 20px;
-  margin: 0 auto;
-  border-radius: 15px;
-}
-
-/* Portfolio item styling */
 .portfolio-item {
   position: relative;
+  width: 100%;
+  height: 40vh;
   border-radius: 15px;
+  transition: opacity 1.5s ease-out, transform 0.65s ease-out;
+}
+
+.portfolio-item img {
+  flex-grow: 1;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1);
+  filter: brightness(70%) sepia(95%) hue-rotate(180deg);
+}
+
+/* Add zoom animation */
+@keyframes zoomIn {
+  from {
+      transform: scale(0.8);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .portfolio-row {
+      flex-direction: column; /* Stack the images vertically on small screens */
+      justify-content: center;
+  }
+
+  .portfolio-row img {
+      max-width: 100%; /* Full width for smaller screens */
+      margin: 5px; /* Add some spacing */
+  }
+}
+
+/* Animation Effects */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease-out, transform 0.65s ease-out;
+}
+
+.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+@media (max-width: 768px) {
+  .portfolio-row {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .portfolio-row img {
+    max-width: 100%;
+    margin: 5px;
+  }
 }
 
 .portfolio-item:hover img {
