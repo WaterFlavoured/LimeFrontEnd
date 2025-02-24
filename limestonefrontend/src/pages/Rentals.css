@@ -1,26 +1,90 @@
 .rentals {
     display: flex;
     flex-direction: column;
+    align-items: center;
     color: beige;
-    margin: 10px;
+    margin: 20px;
+    width: 100%;
 }
 
+/* Center the header */
 .rentals > .header {
-    display: flex;
-    color: beige;
-    justify-content: center;   
+    text-align: center;
+    font-size: 45px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.rentals > .main-body {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+/* Grid layout for rental items */
+.rental-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Forces 2 items per row */
+    gap: 50px;
+    width: 100%;
+    max-width: 900px; /* Keeps everything centered */
+    justify-items: center;
+    margin-bottom: 100px;
 }
 
-.imgs {
+/* Ensure all rental boxes have the same size */
+.rental-box {
     display: flex;
-    padding: 25px;
-    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px; /* Fixed width */
+    height: 550px; /* Fixed height */
+    padding: 20px;
+    border: 5px solid #f5f5dc;
+    border-radius: 20px;
+    background-color: #263238;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
+/* Image container */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+/* Rental images */
+.rental-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+/* Make the active image visible */
+.rental-image.visible {
+    opacity: 1;
+}
+
+/* Rental description */
+.rental-description {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Bolded header */
+.rental-description h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #F5F5F5;
+}
+
+/* Regular description text */
+.rental-description p {
+    font-size: 16px;
+    color: #E0E0E0;
+    margin: 5px 0;
+}
