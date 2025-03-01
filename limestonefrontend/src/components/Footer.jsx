@@ -11,13 +11,13 @@ const Footer = () => {
       <div className='footer-content'>
         <h1>
           <Link to="/" className='footer-logo'>
-            LimeStone <br />
+            Limestone <br />
             Concrete
           </Link>
         </h1>
         <div className='footer-columns'>
           <div className='footer-column1'>
-            <h2>Communities</h2>
+            
             <ul className='footer-links'>
               <li><Link to="/">Home</Link></li>
               <li><Link to="/pages/about">About</Link></li>
@@ -26,7 +26,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className='footer-column2'>
-            <h2>Contact</h2>
+            
             <ul>
               <li><Link to="/pages/contact">Contact</Link></li>
               <li>
@@ -42,7 +42,7 @@ const Footer = () => {
       <div className='footer-bottom'>
         <p>COPYRIGHT © LIMESTONE CONCRETE LTD.</p>
         <img src={logo} alt='Limestone Concrete Logo' />
-        <p>DESIGNED BY LIMESTONE</p>
+        <p>DESIGNED BY LIMESTONE CONCRETE</p>
       </div>
     </footer>
   )

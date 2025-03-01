@@ -2,6 +2,7 @@
 .about {
   background-color: #37474F;
   font-family: Arial, sans-serif;
+  font-size: 24px;
   margin: 0;
   padding: 0;
   text-align: justify;
@@ -18,24 +19,35 @@
 .about-h1 {
   display: flex;
   padding-top: 50px;
+  padding-bottom: 50px;
   align-items: center;
   flex-direction: column;
 }
-
 /* Header text color */
 .about .header {
   display: flex;
   color: #F5F5F5;
   flex-direction: column;
+  width: 100%;
 }
 
-/* ABOUT image styles */
-.about .image1 {
+/* Images at the top*/
+.about .imageHeaders {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   flex: 1;
+  align-items: center;
+  width: 100%;
   height: auto;
-  margin: 0 auto;
 }
+
+.about .imageHeaders img {
+  width: 33.33333%; /* Ensures they fit */
+  height: 650px;
+  object-fit: cover;
+}
+
 
 /* Center the "ABOUT" title */
 .about h1:first-child {
@@ -81,6 +93,11 @@
 .tempBlock1 > .ourStandards {
   display: flex;
   flex-direction: column;
+}
+
+.ourStanText {
+  display: flex;
+  padding-top: 50px;
 }
 
 /* TEMP BLOCK 2 Styles */

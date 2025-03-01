@@ -30,7 +30,7 @@ const Contact = () => {
         <div className='contactF-title'>
           <h2>GET IN TOUCH</h2>
           <h1>Reach out now and let's<br />start a converstation</h1>
-          <p>someemail@limestoneconcrete.ca | 519-870-0320</p>
+          <p>limestoneconcrete23@outlook.com | 519-870-0320</p>
         </div>
 
         <form className='contactF-form' onSubmit={onSubmit}>
