@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #263238;
+  color: #37474F;
+  text-align: center;
+}
+
+header {
+  padding: 20px;
+  background-color: #FFF2C2;
+  color: black;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin: 5px 0;
+  font-size: 1.2em;
+}
+
+/* Portfolio layout */
+.portfolio {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.portfolio-row {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 12.5%;
+  margin-top: 2.5%;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.portfolio-item {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  border-radius: 15px;
+  transition: opacity 1.5s ease-out, transform 0.65s ease-out;
+}
+
+.portfolio-item img {
+  flex-grow: 1;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1);
+  filter: brightness(70%) sepia(95%) hue-rotate(180deg);
+}
+
+/* Add zoom animation */
+@keyframes zoomIn {
+  from {
+      transform: scale(0.8);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .portfolio-row {
+      flex-direction: column; /* Stack the images vertically on small screens */
+      justify-content: center;
+  }
+
+  .portfolio-row img {
+      max-width: 100%; /* Full width for smaller screens */
+      margin: 5px; /* Add some spacing */
+  }
+}
+
+/* Animation Effects */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease-out, transform 0.65s ease-out;
+}
+
+.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+@media (max-width: 768px) {
+  .portfolio-row {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .portfolio-row img {
+    max-width: 100%;
+    margin: 5px;
+  }
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1);
+  filter: brightness(70%) sepia(95%) hue-rotate(180deg); /* Add tint effect */
+}
+
+/* Modal Styles */
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  border-radius: 15px;
+}
+
+.modal-content {
+  max-width: 80%;
+  max-height: 80%;
+  border: 3px solid #fff;
+  animation: zoomIn 0.3s ease;
+}
+
+.caption {
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Add zoom animation */
+@keyframes zoomIn {
+  from {
+      transform: scale(0.8);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .portfolio-row {
+      flex-direction: column; /* Stack the images vertically on small screens */
+      justify-content: center;
+  }
+
+  .portfolio-row img {
+      max-width: 100%; /* Full width for smaller screens */
+      margin: 5px; /* Add some spacing */
+  }
+}

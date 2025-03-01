@@ -1,0 +1,183 @@
+/* General Styles */
+.about {
+  background-color: white;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}
+
+.about div {
+  text-align: center;
+  padding: 20px;
+}
+
+/* ABOUT header padding */
+.about-h1 {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center;
+  flex-direction: column;
+  color: #FFAB00;
+}
+/* Header text color */
+.about .header {
+  display: flex;
+  color: #E8B86D;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Images at the top*/
+.about .imageHeaders {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.about .imageHeaders img {
+  width: 33.33333%; /* Ensures they fit */
+  height: 650px;
+  object-fit: cover;
+}
+
+
+/* Center the "ABOUT" title */
+.about h1:first-child {
+  text-align: center;
+}
+
+/* Center and resize the logo */
+.about .logo {
+  width: 100px;
+  height: 100px;
+}
+
+/* Center "OUR STANDARDS" */
+.about div h1:nth-of-type(2) {
+  text-align: center;
+}
+
+/* Center text underneath "OUR STANDARDS" */
+.about div p {
+  text-align: center;
+}
+
+/* Align OUR VISION and OUR DUTIES */
+.about > .ourVis {
+  text-align: left;
+}
+
+.about > .vision {
+  text-align: right;
+}
+
+/* TEMP BLOCK 1 Styles */
+.about > .tempBlock1 {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  padding: 100px;
+  color: #263238;
+  background-color: #B7B7B7;
+  justify-content: space-evenly;
+}
+
+.tempBlock1 > .ourStandards {
+  display: flex;
+  flex-direction: column;
+}
+
+.ourStanText {
+  display: flex;
+  padding-top: 50px;
+}
+
+/* TEMP BLOCK 2 Styles */
+.about > .tempBlock2 {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: #263238;
+  justify-content: space-evenly;
+}
+
+.tempBlock2 > .oVphoto {
+  display: flex;
+  flex: 1;
+  justify-content: left;
+  max-width: 30%;
+}
+
+.tempBlock2 > .ourVis {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  width: 50%;
+  flex-direction: column;
+  gap: 50px;
+  padding-bottom: 75px;
+}
+
+.tempBlock2 > .ourVisText {
+  display: flex;
+  padding-top: 50px;
+}
+
+/* TEMP BLOCK 3 Styles */
+.about > .tempBlock3 {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: #263238;
+  background-color: #B7B7B7;
+  justify-content: space-evenly;
+}
+
+.tempBlock3 > .oVphoto {
+  display: flex;
+  flex-grow: 0;
+  justify-content: left;
+  max-width: 30%;
+}
+
+.tempBlock3 > .ourDut {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  width: 50%;
+  flex-direction: column;
+  gap: 50px;
+  padding-bottom: 75px;
+}
+
+.fade-in, .slide-in-left, .slide-in-right {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease-out, transform 0.65s ease-out;
+}
+
+.slide-in-left {
+  transform: translateX(-50px);
+}
+
+.slide-in-right {
+  transform: translateX(50px);
+}
+
+.visible {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
