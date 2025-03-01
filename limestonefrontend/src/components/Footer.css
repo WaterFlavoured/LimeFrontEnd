@@ -3,8 +3,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 3rem 2rem;
-  background-color: #FFAB00;
-  color: black;
+  background-color: #163020;
+  color: white;
   
 }
 
@@ -21,7 +21,7 @@
   margin-top: -1rem;
 }
 .footer-columns a {
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 1.2rem;
 }
@@ -62,7 +62,7 @@
 }
 
 .footer-logo {
-  color: rgb(73, 73, 73);
+  color: white;
   text-decoration: none;
 }
 
